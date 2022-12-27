@@ -1,0 +1,18 @@
+- name: About Atmosphere
+  href: about-atmosphere.md
+  items:
+  - name: Software components
+    href: software-components.md
+  - name: Versions
+    href: versions.md
+- name: Installation
+  href: installation.md
+  items:
+  - name: System Requirements
+    href: system-requirements.md
+  - name: Install on Windows
+    href: install-on-windows.md
+  - name: Install on MacOS
+    href: install-on-macos.md
+  - name: Install on Linux
+    href: install-on-linux.md

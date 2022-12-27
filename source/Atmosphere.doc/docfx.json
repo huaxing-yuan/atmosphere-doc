@@ -1,0 +1,62 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "training/toc.yml",
+          "training/**.md",
+          "about/toc.yml",
+          "about/**.md",
+          "faqs/toc.yml",
+          "faqs/**.md"
+        ]
+      },
+      {
+        "files": [
+          "docs/**.md",
+          "docs/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "templates/darkfx"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": true,
+    "disableGitFeatures": false,
+    "globalMetadata": {
+      "_appTitle": "Atmosphere Studio Knowledge base",
+      "_appFooter": "<span>© Copyright 2022 Stellarator QA, All rights reserved.</span>",
+      "_appFaviconPath": "favicon.ico",
+      "_enableSearch": true
+    }
+  }
+
+}

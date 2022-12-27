@@ -1,0 +1,9 @@
+- name: Documentation
+  href: docs/
+  homepage: index.md
+- name: Training
+  href: training/
+- name: FAQs
+  href: faqs/
+- name: About
+  href: about/
