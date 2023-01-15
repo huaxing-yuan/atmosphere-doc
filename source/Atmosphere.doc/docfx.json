@@ -23,6 +23,8 @@
     "resource": [
       {
         "files": [
+          "favicon.ico",
+          "logo.png",
           "images/**"
         ]
       }
@@ -53,9 +55,16 @@
     "disableGitFeatures": false,
     "globalMetadata": {
       "_appTitle": "Atmosphere Studio Knowledge base",
-      "_appFooter": "<span>© Copyright 2022 Stellarator QA, All rights reserved.</span>",
+      "_appFooter": "<span>© Copyright 2022-2023 Stellarator QA, All rights reserved.</span>",
       "_appFaviconPath": "favicon.ico",
-      "_enableSearch": true
+      "_appLogoPath": "logo.png",
+      "_enableSearch": true,
+      "_enableNewTab": true,
+      "_disableContribution": false,
+      "_gitContribute": {
+        "branch": "main"
+      },
+      "_gitUrlPattern": "github"
     }
   }
 
