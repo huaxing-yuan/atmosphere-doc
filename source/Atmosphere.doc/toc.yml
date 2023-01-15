@@ -1,6 +1,6 @@
 - name: Documentation
   href: docs/
-  homepage: index.md
+  homepage: docs/index.md
 - name: Training
   href: training/
 - name: FAQs
