@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atmosphere.doc", "Atmosphere.doc\Atmosphere.doc.csproj", "{F0A69F25-F679-4FA2-8999-8D8A267079B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atmosphere.doc", "Atmosphere.doc\Atmosphere.doc.csproj", "{F0A69F25-F679-4FA2-8999-8D8A267079B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{8F56BDCD-AC16-4D26-B0ED-1DEA14F65D2B}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

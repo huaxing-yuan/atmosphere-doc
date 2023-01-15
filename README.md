@@ -1,6 +1,15 @@
-# Atmosphere Doc
+# Atmosphere Studio
+Atmosphere Studio is a Cross-platform and All-in-One API Testing and Automation solution, running on Windows, MacOS and Linux.
 
-This is the documentation project for Atmosphere Studio
+![Overview](readme/overview.jpg)
+
+This repository is aimed to open-source the documentation of Atmosphere Studio product
+
+## Documentation website
+The documentation website is deploed at: https://stellar-qa.com/docs
+
+Once the changes is made on `main` branch it will be deploied later.
+
 
 ### Folders
 - `docs`: documentation of the software, by funcitonality
