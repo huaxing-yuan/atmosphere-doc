@@ -54,8 +54,8 @@
     "cleanupCacheHistory": true,
     "disableGitFeatures": false,
     "globalMetadata": {
-      "_appTitle": "Atmosphere Studio Knowledge base",
-      "_appFooter": "<span>© Copyright 2022-2023 Stellarator QA, All rights reserved.</span>",
+      "_appTitle": "Atmosphere Studio Documentation",
+      "_appFooter": "<span>© Copyright 2022-2023 Stellar QA, All rights reserved.</span>",
       "_appFaviconPath": "favicon.ico",
       "_appLogoPath": "logo.png",
       "_enableSearch": true,

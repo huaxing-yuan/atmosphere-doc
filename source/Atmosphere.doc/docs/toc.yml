@@ -6,13 +6,26 @@
   - name: Versions
     href: versions.md
 - name: Installation
-  href: installation.md
+  href: installation/installation.md
   items:
   - name: System Requirements
-    href: system-requirements.md
+    href: installation/system-requirements.md
   - name: Install on Windows
-    href: install-on-windows.md
+    href: installation/install-on-windows.md
   - name: Install on MacOS
-    href: install-on-macos.md
+    href: installation/install-on-macos.md
   - name: Install on Linux
-    href: install-on-linux.md
+    href: installation/install-on-linux.md
+- name: Manual API Testing
+  href: manual-testing/manual-api-testing.md
+  items:
+  - name: Import API Definition
+    href: manual-testing/import-api-definition.md
+  - name: Request Editor
+    href: manual-testing/request-editor.md
+  - name: Request Options
+    href: manual-testing/request-options.md
+  - name: Save and reuse requests
+    href: manual-testing/saved-requests.md
+  - name: Test Environments
+    href: manual-testing/test-environments.md
