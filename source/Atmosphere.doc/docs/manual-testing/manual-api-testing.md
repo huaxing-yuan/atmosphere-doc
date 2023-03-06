@@ -22,6 +22,13 @@ Now let's get familiar with your workspace for Manual API Testing
 > [!NOTE]
 > To understand `Object-model based` API Testing, please refer to [Object-model based API Testing](../features/object-model-based-testing.md)
 
+> [!CAUTION]
+> To understand `Object-model based` API Testing, please refer to [Object-model based API Testing](../features/object-model-based-testing.md)
+
+> [!WARNING]
+> To understand `Object-model based` API Testing, please refer to [Object-model based API Testing](../features/object-model-based-testing.md)
+
+
 ## API Definition
 In order to perform tests on a particular API, we need its definition, so the service provider and the service consumer can understand each other.
 API definition usually contains the data structure, network protocol, endpoints and other useful information.
