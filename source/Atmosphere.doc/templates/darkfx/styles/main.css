@@ -1,14 +1,15 @@
 :root, body.dark-theme {
     --color-foreground: #ccd5dc;
-    --color-navbar: #3399FF;
+    --color-navbar: #539aB7;
     --color-breadcrumb: #539aB7;
     --color-underline: #ddd;
     --color-toc-hover: #fff;
-    --color-background: #2d2d30;
+    --color-background: #111111;
     --color-background-subnav: #333337;
     --color-background-dark: #1e1e1e;
     --color-background-table-alt: #212123;
     --color-background-quote: #69696e;
+    --color-background-toc: #222222;
     --color-warning: orange;
     --color-background-warning: #fff3e0;
     --card-box-shadow: 0 1px 2px 0 rgba(61, 65, 68, 0.06), 0 1px 3px 1px rgba(61, 65, 68, 0.16);
@@ -16,13 +17,14 @@
 }
 
 body.light-theme {
-    --color-navbar: #3366CC;
+    --color-navbar: #01579B;
     --color-foreground: #34393e;
-    --color-breadcrumb: #337ab7;
-    --color-toc-hover: #4c4c4c;
+    --color-breadcrumb: #01579B;
+    --color-toc-hover: #01579B;
     --color-background: #ffffff;
     --color-background-subnav: #EEEEEE;
-    --color-background-dark: #CCCCCC;
+    --color-background-dark: #BBBBBB;
+    --color-background-toc: #EEEEEE;
     --color-background-table-alt: #f9f9f9;
     --color-warning: #f57f17;
     --color-danger: #f53333;
@@ -111,20 +113,21 @@ article h4 {
         background-color: var(--color-background-dark);
         border-bottom: 5px solid transparent;
         padding-bottom: 15px;
+        transition: border-bottom-color ease 0.25s;
+        transition: color ease 0.25s;
     }
 
         .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
             color: var(--color-foreground);
-            background-color: var(--color-background-dark);
-            border-bottom: 5px solid var(--color-background-subnav);
-            transition: all ease 0.25s;
+            background-color: var(--color-background-subnav);
+            transition: color ease 0.25s;
+            transition: background-color ease 0.5s;
         }
 
     .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
         color: var(--color-foreground);
-        background-color: var(--color-background-dark);
+        background-color: var(--color-background-subnav);
         border-bottom: 5px solid var(--color-breadcrumb);
-        transition: all ease 0.25s;
     }
 
 .navbar-form .form-control {
@@ -140,22 +143,18 @@ article h4 {
     color: var(--color-foreground);
 }
 
-.sidefilter {
-    background-color: var(--color-background);
-    border-left: none;
-    border-right: none;
-}
 
-.sidefilter {
-    background-color: var(--color-background);
+    .sidefilter {
+    background-color: var(--color-background-toc);
     border-left: none;
-    border-right: none;
+    left: 0px;
+    border-right: 1px solid var(--color-background-subnav);
 }
 
 .toc-filter {
     padding: 10px;
     margin: 0;
-    background-color: var(--color-background);
+    background-color: var(--color-background-toc);
 }
 
     .toc-filter > input {
@@ -182,13 +181,21 @@ article h4 {
     }
 
 .sidetoc > .toc {
-    background-color: var(--color-background);
+    background-color: var(--color-background-toc);
     overflow-x: hidden;
 }
 
+.sidetoc.shiftup {
+    bottom: 50px;
+}
+
+
 .sidetoc {
-    background-color: var(--color-background);
+    background-color: var(--color-background-toc);
     border: none;
+    left: 0px;
+    bottom: 50px;
+    border-right: 1px solid var(--color-background-subnav);
 }
 
 .alert {
@@ -303,7 +310,7 @@ code {
 
 .breadcrumb > li + li:before {
     content: "/";
-    color: var(--color-background-dark);
+    color: var(--color-foreground);
     padding: 0;
 }
 
@@ -329,9 +336,9 @@ code {
     font-weight: 300;
 }
 
-.toc .nav > li > a:hover, .toc .nav > li > a:focus {
+.toc .nav > li > a:hover {
     color: var(--color-toc-hover);
-    transition: all ease 0.1s;
+    transition: all ease 0.25s;
 }
 
 .form-control {
@@ -499,7 +506,14 @@ input:checked + .slider:before {
         white-space: initial;
     }
 
+    .affix ul > li > a:hover {
+        border-left: 5px solid var(--color-breadcrumb);
+        color: var(--color-breadcrumb);
+        transition: all ease 0.5s;
+    }
+
     .affix ul > li > a {
+        border-left: 5px solid transparent;
         width: 99%;
         overflow: hidden;
         white-space: nowrap;
