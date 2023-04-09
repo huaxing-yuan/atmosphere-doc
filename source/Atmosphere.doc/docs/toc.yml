@@ -29,3 +29,16 @@
     href: manual-testing/saved-requests.md
   - name: Test Environments
     href: manual-testing/test-environments.md
+- name: Command-Line tool
+  href: command-line/command-line.md
+  items:
+  - name: Run automated Tests
+  - href: command-line/run-automated-tests.md
+  - name: Analyze Service Description
+  - href: command-line/analyze-service-description.md
+  - name: Install Extensions
+  - href: command-line/install-extensions.md
+  - name: Publish Extensions
+  - href: command-line/publish-extensions.md
+  - name: Configure License
+  - href: command-line/configure-license.md
