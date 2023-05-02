@@ -33,12 +33,12 @@
   href: command-line/command-line.md
   items:
   - name: Run automated Tests
-  - href: command-line/run-automated-tests.md
+    href: command-line/run-automated-tests.md
   - name: Analyze Service Description
-  - href: command-line/analyze-service-description.md
+    href: command-line/analyze-service-description.md
   - name: Install Extensions
-  - href: command-line/install-extensions.md
+    href: command-line/install-extensions.md
   - name: Publish Extensions
-  - href: command-line/publish-extensions.md
+    href: command-line/publish-extensions.md
   - name: Configure License
-  - href: command-line/configure-license.md
+    href: command-line/configure-license.md
